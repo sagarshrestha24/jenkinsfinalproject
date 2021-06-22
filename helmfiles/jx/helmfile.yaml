@@ -11,6 +11,8 @@ repositories:
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: kuberhealthy
+  url: https://comcast.github.io/kuberhealthy/helm-repos
 releases:
 - chart: jx3/jxboot-helmfile-resources
   version: 1.0.63
@@ -64,5 +66,11 @@ releases:
   values:
   - ../../versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
   - jx-values.yaml
+- chart: kuberhealthy/kuberhealthy
+  name: kuberhealthy
+- chart: jx3/jx-kh-check
+  name: jx-kh-check
+- chart: jx3/jx-kh-check
+  name: health-checks-install
 templates: {}
 renderedvalues: {}
