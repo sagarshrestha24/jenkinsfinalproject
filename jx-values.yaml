@@ -9,6 +9,8 @@ jxRequirements:
     namespace: jx
   ingress:
     domain: ""
+    customHosts:
+       hook: "12cc587de2ef.ngrok.io"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
