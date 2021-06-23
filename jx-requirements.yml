@@ -22,7 +22,8 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 192.168.1.251.nip.io
+    customHosts:
+        hook: "12cc587de2ef.ngrok.io"
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
